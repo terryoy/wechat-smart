@@ -83,10 +83,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, "upload") # by default you need to create an upload folder here
+
 # for wechat(weixin) public account
 WECHAT_TOKEN = '<your_wechat_token>'
 WECHAT_ACCOUNT = '<your_wechat_account>'
-
+WECHAT_APP_ID = '<your_wechat_app_id>'
+WECHAT_APP_SECRET = '<your_wechat_app_secret>'
 
 LOGGING = {
     'version': 1,
